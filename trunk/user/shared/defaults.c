@@ -84,8 +84,8 @@ struct nvram_pair router_defaults[] = {
 	{ "wan_auth_pass", "" },
 	{ "wan_auth_host", "10.0.0.1" },
 	{ "wan_route_x", "IP_Routed" },
-	{ "wan_src_phy", "0" },
-	{ "wan_stb_x", "0" },
+	{ "wan_src_phy", "1" },
+	{ "wan_stb_x", "1" },
 	{ "wan_stb_iso", "1" },
 	{ "vlan_filter", "0" },
 	{ "vlan_vid_cpu", "" },
@@ -684,7 +684,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ss_turn_ss", "5" },
 	{ "lan_con", "0" },
 	{ "ss_chnroute_url", "https://ispip.clang.cn/all_cn.txt"},
-	{ "ss_adblock_url", "https://gitee.com/privacy-protection-tools/anti-ad/raw/master/anti-ad-for-dnsmasq.conf"},
+	{ "ss_adblock_url", "https://anti-ad.net/anti-ad-for-dnsmasq.conf"},
 	{ "ss_schedule_enable", "0" },
 	{ "ss_schedule", "00000000000" },
 	{ "ss_enable", "0" },
@@ -767,7 +767,7 @@ struct nvram_pair router_defaults[] = {
 	/* AdguargHome */
 	{ "adg_enable", "0" },
 	{ "adg_redirect", "0" },
-	{ "adg_link", "https://cdn.jsdelivr.net/gh/chongshengB/rt-n56u/trunk/user/adguardhome/AdGuardHome" },
+	{ "adg_link", "https://jsd.cdn.zzko.cn/gh/jasonandy999/Padavan-KVR@main/trunk/user/adguardhome/AdGuardHome" },
 #endif
 
 #if defined(APP_CADDY)
