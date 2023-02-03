@@ -484,10 +484,10 @@ var tabM4 = [
 ];
 var tabM5 = [
 	{ "title": "<#menu5_4_3#>", "link": "Advanced_AiDisk_others.asp" },
-	{ "title": "<#menu5_4_1#>", "link": "Advanced_AiDisk_samba.asp" },
-	{ "title": "<#menu5_4_2#>", "link": "Advanced_AiDisk_ftp.asp" },
-	{ "title": "<#menu5_4_4#>", "link": "Advanced_Modem_others.asp" },
-	{ "title": "<#menu5_4_5#>", "link": "Advanced_Printer_others.asp" }
+	{ "title": "", "link": "" },
+	{ "title": "", "link": "" },
+	{ "title": "", "link": "" },
+	{ "title": "", "link": "" },
 ];
 var tabM6 = [
 	{ "title": "<#menu5_6_2#>", "link": "Advanced_System_Content.asp" },
@@ -538,12 +538,6 @@ tabMenuHash.put('10', tabM9);
 var menuL1 = [
 	{ "title": "<#menu1#>", "link": "index.asp", "icon": "icon-home" }
 ];
-if (found_app_vpnsvr()) {
-	menuL1.push({ "title": "<#menu2#>", "link": "vpnsrv.asp", "icon": "icon-retweet" });
-}
-if (found_app_vpncli()) {
-	menuL1.push({ "title": "<#menu6#>", "link": "vpncli.asp", "icon": "icon-globe" });
-}
 menuL1.push({ "title": "<#menu4#>", "link": "Main_TrafficMonitor_realtime.asp", "icon": "icon-tasks" });
 menuL1.push({ "title": "<#menu5_8#>", "link": "Advanced_System_Info.asp", "icon": "icon-random" });
 menuL1.push({ "title": "<#menu5#>", "link": "as.asp", "icon": "icon-wrench" });
@@ -556,7 +550,7 @@ var menuL2 = [
 	{ "title": "<#menu5_2#>", "link": tabMenuHash.get('3')[0].link, index: "3" },
 	{ "title": "<#menu5_3#>", "link": tabMenuHash.get('4')[0].link, index: "4" },
 	{ "title": "<#menu5_5#>", "link": tabMenuHash.get('5')[0].link, index: "5" },
-	{ "title": "<#menu5_4#>", "link": tabMenuHash.get('6')[0].link, index: "6" },
+	{ "title": "", "link": tabMenuHash.get('')[0].link, index: "" },
 	{ "title": "<#menu5_6#>", "link": tabMenuHash.get('7')[0].link, index: "7" },
 	{ "title": "<#menu5_10#>", "link": tabMenuHash.get('8')[0].link, index: "8" },
 	{ "title": "<#menu5_9#>", "link": support_2g_radio() ? tabMenuHash.get('9')[0].link : "Main_EStatus_Content.asp", index: "9" },
@@ -905,7 +899,7 @@ function show_footer() {
 	var footer_code = '<div align="center" class="bottom-image"></div>\n';
 	footer_code += '<div align="center" class="copyright"><#footer_copyright_desc#></div>\n';
 	footer_code += '<div align="center">\n';
-	footer_code += '  <span>Highcharts by Torstein Hønsi & <a href="http://www.highcharts.com">Highsoft</a></span></br>\n';
+	footer_code += '  <span>Highcharts by Torstein Hønsi & <a href="http://www..com">Highsoft</a></span></br>\n';
 	footer_code += '  <span>Big icons designed by <a href="http://www.freepik.com">Freepik</a></br></span>\n';
 	footer_code += '  <span>Non-Commercial Use Only</span></br>\n';
 	footer_code += '</div>\n';
