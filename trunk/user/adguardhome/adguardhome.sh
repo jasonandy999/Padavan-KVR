@@ -90,10 +90,10 @@ dns:
   safebrowsing_enabled: false
   resolveraddress: ""
   upstream_dns:
-  - quic://i.passcloud.xyz:784
-  - tls://i.passcloud.xyz:5432
-  - quic://a.passcloud.xyz:784
-  - tls://a.passcloud.xyz:5432
+  - https://1.12.12.12/dns-query
+  - tls://1.12.12.12:853
+  - https://120.53.53.53/dns-query
+  - tls://120.53.53.53:853
 tls:
   enabled: false
   server_name: ""
@@ -103,15 +103,15 @@ tls:
   certificate_chain: ""
   private_key: ""
 filters:
-- enabled: true
+- enabled: false
   url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   name: AdGuard Simplified Domain Names filter
   id: 1
-- enabled: true
+- enabled: false
   url: https://adaway.org/hosts.txt
   name: AdAway
   id: 2
-- enabled: true
+- enabled: false
   url: https://anti-ad.net/easylist.txt
   name: anti-AD
   id: 3
@@ -137,7 +137,7 @@ fi
 
 dl_adg() {
 logger -t "AdGuardHome" "下载AdGuardHome"
-curl -k -s -o /tmp/AdGuardHome/AdGuardHome --connect-timeout 10 --retry 3 https://raw.githubusercontent.com/vb1980/Padavan-KVR/main/trunk/user/adguardhome/AdGuardHome
+curl -k -s -o /tmp/AdGuardHome/AdGuardHome --connect-timeout 10 --retry 3 https://raw.iqiq.io/jasonandy999/Padavan-KVR/main/trunk/user/adguardhome/AdGuardHome
 if [ ! -f "/tmp/AdGuardHome/AdGuardHome" ]; then
 logger -t "AdGuardHome" "AdGuardHome下载失败，请检查是否能正常访问github!程序将退出。"
 nvram set adg_enable=0
