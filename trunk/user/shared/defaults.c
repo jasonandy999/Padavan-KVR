@@ -767,7 +767,7 @@ struct nvram_pair router_defaults[] = {
 	/* AdguargHome */
 	{ "adg_enable", "0" },
 	{ "adg_redirect", "0" },
-	{ "adg_link", "https://jsd.cdn.zzko.cn/gh/jasonandy999/Padavan-KVR@main/trunk/user/adguardhome/AdGuardHome" },
+	{ "adg_link", "https://raw.iqiq.io/jasonandy999/Padavan-KVR/main/trunk/user/adguardhome/AdGuardHome" },
 #endif
 
 #if defined(APP_CADDY)
